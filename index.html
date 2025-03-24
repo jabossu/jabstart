@@ -57,7 +57,14 @@
       
       input {
         font-size: 18px;
-        padding: 5px;
+        padding: 7px;
+        margin: 5px 0px;
+      }
+      
+      #buttonbox {
+      width: 100%;
+        margin: auto;
+        text-align: center;
       }
       
       .button {
@@ -121,9 +128,11 @@
     <div id="searchbox">
       <h2> 🔎 Search ! </h2>
       <form id="searchbar" action="https://duckduckgo.com/" method="get" >
-        <input type="text" id="q" name="q" style="width: 350px;" autofocus >
-        <input type="button" value="🦆 DuckDuckGo" name="DuckDuckGo" id="duckbutton" class="button" onclick="duckgo()" />
-        <input type="button" value="🩺 Doocteur" name="Doocteur" id="docbutton" class="button" onclick="docsearch()" />
+        <input type="text" id="q" name="q" style="width: 100%;" autofocus placeholder="Search here…" >
+        <div id="buttonbox">
+          <input type="button" value="🦆 DuckDuckGo" name="DuckDuckGo" id="duckbutton" class="button" onclick="duckgo()" />
+          <input type="button" value="🩺 Doocteur" name="Doocteur" id="docbutton" class="button" onclick="docsearch()" />
+        </div>
       </form>
       <script>
         form=document.getElementById("searchbar");

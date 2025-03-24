@@ -2,6 +2,7 @@
   <head>
     <title>JabStart</title>
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>">
+    
     <style>
       :root {
         --dark: #04151F;
@@ -32,12 +33,16 @@
         padding: 17px;
         margin-top: 100px;
       }
-        
+      
+      #versionTag {
+        float: right;
+        font-size: small;
+        margin-top: -20px;
+      }
+      
       #headerbar {
         background-color: var(--color);
-        width: 100%;
-        padding: 10px;
-        padding-left: 30px;
+        padding: 10px 30px;
         margin: 0px;
       }
       
@@ -100,16 +105,16 @@
         color: var(--color);
         border-color: var(--color);
         background: var(--light);
-      }
-      
-      
+      }      
     </style>
+    
   </head>
 
   <body>
   
   <div id="headerbar">
     <h1><a href="#">&#x1F4AB; Jabstart </a></h1>
+    <p id="versionTag"><a href="https://github.com/jabossu/jabstart/commits/main/">v1.1</a></p>
   </div>
 
   <div id="main">  

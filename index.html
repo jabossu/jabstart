@@ -1,0 +1,174 @@
+<html>
+  <head>
+    <title>JabStart</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>">
+    <style>
+      :root {
+        --dark: #04151F;
+        --light: #b7c0ee;
+        --color: #7b287d;
+        --contrast: #7067cf;
+        --radius: 5px;
+      }
+      
+      body {
+        background-color: var(--dark);
+        color: var(--light);
+        margin: 0px;
+        height: 100%;
+        width: 100%;
+        font-size: 18px;
+        font-family: monospace;
+        }
+        
+      a {
+        color: var(--light);
+        text-decoration: none;
+      }
+      
+      h2 {
+        width: 100%;
+        border-top: 1px dotted var(--light);
+        padding: 17px;
+        margin-top: 100px;
+      }
+        
+      #headerbar {
+        background-color: var(--color);
+        width: 100%;
+        padding: 10px;
+        padding-left: 30px;
+        margin: 0px;
+      }
+      
+      #searchbox {
+        margin: 70px auto ;
+        width: 700px;
+      }
+      
+      #main {
+        border-top: 3px dotted  var(--light);
+      }
+      
+      input {
+        font-size: 18px;
+        padding: 5px;
+      }
+      
+      .button {
+        border-radius: var(--radius);
+        border: 1px solid var(--dark);
+        color: white;
+        cursor: pointer;
+        padding:  5px 10px;
+      }
+      .button:hover {
+        color: var(--light);
+        background: var(--dark) !important;
+        transition: .1s;
+        border: 1px solid var(--light);
+      }
+      
+      #duckbutton {
+        background: #FF1919;
+      }
+      
+      #docbutton {
+        background: #6666FF;
+      }
+      
+      #links {
+        width: 700px;
+        margin: 100px auto ;
+      }
+      
+      #linklist {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        }
+      
+      .link {
+        padding: 7px;
+        margin: 8px;
+        border: 1px solid var(--light);
+        border-radius: var(--radius);
+      }
+      
+      .link:hover {
+        transition: .1s;
+        color: var(--color);
+        border-color: var(--color);
+        background: var(--light);
+      }
+      
+      
+    </style>
+  </head>
+
+  <body>
+  
+  <div id="headerbar">
+    <h1><a href="#">&#x1F4AB; Jabstart </a></h1>
+  </div>
+
+  <div id="main">  
+    <div id="searchbox">
+      <h2> 🔎 Search ! </h2>
+      <form id="searchbar" action="https://duckduckgo.com/" method="get" >
+        <input type="text" id="q" name="q" style="width: 350px;">
+        <input type="button" value="🦆 DuckDuckGo" name="DuckDuckGo" id="duckbutton" class="button" onclick="duckgo()" />
+        <input type="button" value="🩺 Doocteur" name="Doocteur" id="docbutton" class="button" onclick="docsearch()" />
+      </form>
+      <script>
+        form=document.getElementById("searchbar");
+        function docsearch() {
+            form.action="https://doocteur.fr/results.html";
+            form.submit();
+        }
+        function duckgo() {
+            form.action="https://duckduckgo.com/";
+            form.submit();
+        }
+      </script>
+      
+
+    </div>
+  
+  
+    <div id="links">
+      <h2> 🔗 Links ! </h2>
+      <div id="linklist">
+
+        <a class="link" href="http://jablog.bio">
+          📒 Jablog (web)
+        </a>
+        
+        <a class="link" href="http://localhost:1313">
+          🪛 Jablog (local)
+        </a>
+        
+        <a class="link" href="http://mail.proton.me">
+          📧 ProtonMail
+        </a>
+        
+        <a class="link" href="https://mailiz.mssante.fr/">
+          🔏 Mailiz
+        </a>
+        
+        <a class="link" href="https://www.ebmfrance.net/fr">
+          🔬 EBM France
+        </a>
+        
+        <a class="link" href="http://piaille.fr">
+          🐘 Mastodon
+        </a>
+        
+        
+      </div>
+    </div>
+  <div>
+  
+  </body>
+
+</html>
